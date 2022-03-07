@@ -1,0 +1,2 @@
+# GRP
+lib em lua desenvolvida para a plataforma Multi Theft Auto (MTA). Ela tem como objetivo facilitar o desenvolvimento de sistemas básicos para roleplay, contém sistema de dar e tirar items (inventário), sistema de fome e sede e sistema de nocaute. /  lib in lua developed for a Multi Theft Auto (MTA) platform. It aims to facilitate the development of basic systems for roleplay, contains a system of giving and taking items (inventory), a system of hunger and thirst and a knockout system.

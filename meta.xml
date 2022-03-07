@@ -1,0 +1,52 @@
+<meta>
+	<info author="Apenas Gabriel" version="1.0.2" name="GRP" description="Lua library created to facility roleplay system creations" type="library" />
+	<!-- base files -->
+	<script src="base.lua" type="server" />
+	<!-- lang file -->
+	<script src="lang.lua" type="shared" />
+	<!-- modules files -->
+	<script src="modules/survival.lua" type="server" />
+	<script src="modules/money.lua" type="server" />
+	<script src="modules/police.lua" type="server" />
+	<script src="modules/prision.lua" type="server" />
+	<script src="modules/inventory.lua" type="client" />
+	<!-- client files -->
+	<script src="client/survival_c.lua" type="client" />
+	<!-- server files -->
+	<script src="server/inventory_s.lua" type="server" />
+	<!-- Config files -->
+	<script src="cfg/inventory_cfg.lua" type="shared" />
+	<script src="cfg/survival_cfg.lua" type="shared" />
+	<script src="cfg/police_cfg.lua" type="shared" />
+	<script src="cfg/prision_cfg.lua" type="shared" />
+	<!-- Ui files -->
+	<file src="ui/font.ttf" />
+	<!-- Exports -->
+		<!-- Server inventory exports -->
+		<export function="servertakePlayerItem" type="server"/>
+		<export function="servergivePlayerItem" type="server"/>
+		<export function="serversetTable" type="server"/>
+		<!-- Client inventory exports -->
+		<export function="takePlayerItem" type="client"/>
+		<export function="givePlayerItem" type="client"/>
+		<export function="getPlayerWeight" type="client"/>
+		<export function="getPlayerMaxWeight" type="client"/>
+		<export function="getInventoryItems" type="client"/>
+		<export function="setPlayerWeight" type="client"/>
+		<export function="addPlayerMaxWeight" type="client"/>
+		<export function="setPlayerMaxWeight" type="client"/>
+		<export function="getItemAmount" type="client"/>
+		<export function="setTable" type="client"/>
+		<!-- Server money exports -->
+		<export function="transferBankMoney" type="server"/>
+		<export function="withdrawBankMoney" type="server"/>
+		<export function="depositBankMoney" type="server"/>
+		<!-- Server police exports -->
+		<export function="callPolice" type="server"/>
+		<export function="callRescue" type="server"/>
+		<!-- Server prision exports -->
+		<export function="setPrisoner" type="server"/>
+		<export function="setJail" type="server"/>
+	<!-- End -->
+	 <download_priority_group>20</download_priority_group>
+</meta>
